@@ -12,8 +12,8 @@ graphic_dt = np.dtype(
 
 tile_dt = np.dtype(
     [
-        ("walkable", np.bool),
-        ("transaparent", np.bool),
+        ("walkable", bool),
+        ("transaparent", bool),
         ("dark", graphic_dt)
     ]
 )
@@ -33,4 +33,6 @@ floor = new_tile(
 )
 wall = new_tile(
     walkable=False, transparent=False, dark=(ord(" "), (255, 255, 255), (0, 0, 100)),
-)
+) 
+
+
