@@ -32,5 +32,4 @@ class Engine:
             console.print(entity.x, entity.y, entity.char, fg=entity.color)
         
         context.present(console)
-
         console.clear()
